@@ -1,0 +1,166 @@
+/* CSS Document */
+@charset "utf-8";
+
+.sns-design-type01{
+	.sns li a:hover,
+	.sns-top li a:hover{
+		opacity: 1!important;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		filter: brightness(95%);
+	}
+	.sns-top li a {
+		border-radius:2px;
+		background: rgba(255,255,255,0.5);
+		font-size:0.7rem;
+		position:relative;
+		display:block;
+		color:#fff;
+		text-align:center;
+		text-decoration: none;
+		letter-spacing: 0;
+		@include trans01;
+		@include grid-media($tablet){
+			padding:3px 6px;
+			line-height: 14px;
+			height: 25px;
+			font-size: 0.8rem;
+			@include paper;
+		}
+		@include grid-media($mobile){
+			padding:4px 6px;
+			line-height: 12px;
+			height: 24px;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+		}
+	}
+	.sns li a {
+		border-radius:2px;
+		background: rgba(255,255,255,0.5);
+		font-weight: 500;
+		position:relative;
+		display:block;
+		color:#fff;
+		text-align:center;
+		text-decoration: none;
+		@include trans01;
+		@include grid-media($mobile){
+			line-height: 12px;
+			height: 26px;
+			font-size:0.75rem;
+			padding:6px 6px;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+		}
+		@include grid-media($tablet){
+			line-height: 21px;
+			height: 25px;
+			font-size:0.8rem;
+			padding:2px 6px;
+			@include paper;
+		}
+	}
+	/* twitter */
+	.sns .twitter a,
+	.sns-top .twitter a{
+		font-size: 1.1rem;
+		padding-top: 1px;
+	}
+	.sns .twitter a{
+		@include grid-media($mobile){
+			padding-top: 2px!important;
+		}
+	}
+	/* Facebook */
+	.sns .facebook a,
+	.sns-top .facebook a{
+		font-size: 0.9rem;
+		padding-top: 3px;
+	}
+	.sns-top .facebook a{
+		@include grid-media($mobile){
+			padding-top: 2px!important;
+		}
+	}
+	.sns .facebook a{
+		@include grid-media($tablet){
+			padding-top: 1px!important;
+		}
+		@include grid-media($mobile){
+			padding-top: 3px!important;
+		}
+	}
+	/* hatebu */
+	.sns-top .hatebu a{
+		@include grid-media($mobile){
+			font-size: 0.75rem;
+		}
+	}
+	.sns .hatebu a{
+		padding-top: 0px;
+		@include grid-media($mobile){
+			padding-top: 5px!important;
+			
+		}
+	}
+	/* pocket */
+	.sns .pocket a{
+		@include grid-media($mobile){
+			padding-top: 5px!important;
+			
+		}
+	}
+	/* line */
+	.sns .line a,
+	.sns-top .line a{
+		font-size: 1.2rem;
+		padding-top: 0px;
+	}
+	.sns-top .twitter a,
+	.sns-top .facebook a,
+	.sns-top .hatebu a,
+	.sns-top .pocket a,
+	.sns-top .line a,
+	.sns .twitter a,
+	.sns .facebook a,
+	.sns .hatebu a,
+	.sns .pocket a,
+	.sns .line a{
+		border: 2px solid;
+	}
+	/* twitter */
+	.sns .twitter a,
+	.sns-top .twitter a{
+		border-color:#00acee;
+		background: #00acee;
+	}
+	/* Facebook */
+	.sns .facebook a,
+	.sns-top .facebook a{
+		border-color:#3b5998;
+		background: #3b5998;
+	}
+	/* hatebu */
+	.sns .hatebu a,
+	.sns-top .hatebu a{
+		border-color:#5d8ac1;
+		background: #5d8ac1;
+	}
+	/* Pocket */
+	.sns .pocket a,
+	.sns-top .pocket a{
+		border-color:#f03e51;
+		background: #f03e51;
+	}
+	/* line */
+	.sns .line a,
+	.sns-top .line a{
+		display: block;
+		border-color:#6cc655;
+		text-align: center;
+		background: #6cc655;
+		svg{
+			width: 24px!important;
+			fill:#fff!important;
+		}
+	}
+}
