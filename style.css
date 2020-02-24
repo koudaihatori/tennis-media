@@ -725,6 +725,8 @@ footer {
 /* ヘッダー */
 /* CSS Document */
 #header-box {
+  border-bottom: 1px solid #e4e4e4;
+
   width: 100%;
   padding: 0; }
   @media (max-width: 767px) {
