@@ -203,12 +203,67 @@
 
 
             <div class="BlockHead__ttlArea">
-                <h1 class="BlockHead__title--col-wh"><span>日本最大級の<br class="Display--sp">テニス専門<br>ポータルサイト</span></h1>
+                <h1 class="BlockHead__title--col-wh">TENISH<span>日本最大級の<br class="Display--sp">テニス専門ポータルメディア</span></h1>
                     <div class="BlockHead__middle">
                     <div class="BlockHead__circle">スクール<span>3,000</span>件掲載</div>
                     <div class="BlockHead__circle">簡単<span>わかる</span>お得</div>
-                    <div class="BlockHead__circle">日本<span>最大級</span>情報サイト</div>
+                    <div class="BlockHead__circle">日本<span>最大級</span>メディア</div>
                 </div>
-            </div>
+            </div>            
         </div>
+<!-- 
+    <section id="sec01" class="sec">
+	<div class="head">
+		<div class="headsub">- PICK UP -</div>
+		<h2 class="headtitle border-ulstr">TENISHおすすめ記事</h2>
+	</div>
+	<div class="inner">
+		<div class="head_wrap">
+			<p class="subtitle inner-sp">これさえ読めば、もう失敗することはない！！<br class="sp">TENISHの<span class="fc-orange">厳選特集記事</span>です！</p>
+        </div>
+    </div>
+
+    </section> -->
+
+
+
+    <div id="contents">
+
+    <!--メインコンテンツ-->
+        <main id="onecolumn960lp" class="main-contents <?php echo is_article_design(); ?> <?php is_animation_style(); ?>" itemprop="mainContentOfPage">
+            <section class="cps-post-box hentry">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <article class="cps-post">
+                        
+                        <div class="cps-post-main-box">
+                            <div class="cps-post-main entry-content <?php echo esc_html(get_option('font_size'));?> <?php echo esc_html(get_option('font_size_sp'));?>" itemprop="articleBody">
+
+                                <?php the_content(); ?>
+                                
+                            </div>
+                        </div>
+                    </article>
+                <?php endwhile; ?>
+                <?php else : ?>
+                    <article class="cps-post">
+                        <h1 class="post-title">記事が見つかりませんでした。</h1>
+                    </article>
+                <?php endif; ?>
+            </section>
+            
+            <?php if( is_bread_display() == "exist") :?>
+            <?php if( is_mobile() ): ?>
+            <?php get_template_part('include/breadcrumb'); ?>
+            <?php endif; ?>
+            <?php endif; ?>
+        </main>
+
+    </div>
+
+
+
+
+
+
+
 <?php get_footer(); ?>

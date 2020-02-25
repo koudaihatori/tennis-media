@@ -1,4 +1,30 @@
 <?php
+
+
+
+// 固定ページLPの新規投稿記事取得
+function new_list_func($atts){
+	global $post;
+	$arg   = array(
+	  'posts_per_page' => 4,
+	  'orderby'        => 'date', 
+	  'order'          => 'DESC',
+	);
+	$posts = get_posts($arg);
+	foreach($posts as $post):
+	  setup_postdata($post);
+	  $str.='<p>';
+	  $str.= get_permalink();
+	  $str.='</p>';
+	endforeach;
+	wp_reset_postdata();
+	return $str;
+  }
+  add_shortcode('new_list', 'new_list_func');
+
+
+
+
 //スマホのユーザーエージェント定義
 function is_mobile(){
     $ua = $_SERVER['HTTP_USER_AGENT'];

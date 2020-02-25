@@ -51,7 +51,7 @@
 				<?php endif; ?>
 				<?php if ( get_option('fb_page_url') ): ?>
 					<span class="facebook">
-					<a href="<?php echo get_option('fb_page_url'); ?>"><i class="jic-type jin-ifont-facebook" aria-hidden="true"></i></a>
+					<a href="<?php echo get_option	('fb_page_url'); ?>"><i class="jic-type jin-ifont-facebook" aria-hidden="true"></i></a>
 					</span>
 				<?php endif; ?>
 				<?php if ( get_option('insta_page_url') ): ?>
