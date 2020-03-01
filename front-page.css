@@ -19,37 +19,33 @@ h1.BlockHead__title--col-wh {
     font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Osaka,'MS UI Gothic',sans-serif;
   }
   
-  .BlockHead__ttlArea {
-      /* position: absolute;
-      top: 0;
-      left: 0; */
-      width: 100%;
-      height: 468px;
-      /* height: 640px; */
-      text-align: center;
-  }
-  
-  h1.BlockHead__title--col-wh span {
-    display: block;
-    margin-bottom: -4px;
-    font-size: 27px;
-    font-weight: bold;
-  }
-  /* ヘッダー中央の丸いやつ */
-  .BlockHead__middle {
-    color: white;
-    width: 400px;
-    margin: 0 auto 20px;
-    margin-top: 55px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-@media screen and (max-width: 480px){
-	.BlockHead__middle {
-		width: 350px;
-	}
+.BlockHead__ttlArea {
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	width: 100%;
+	height: 468px;
+	/* height: 640px; */
+	text-align: center;
 }
+  
+h1.BlockHead__title--col-wh span {
+	display: block;
+	margin-bottom: -4px;
+	font-size: 27px;
+	font-weight: bold;
+}
+/* ヘッダー中央の丸いやつ */
+.BlockHead__middle {
+	color: white;
+	width: 400px;
+	margin: 0 auto 20px;
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
 
   .BlockHead__circle {
     display: inline-block;
@@ -83,6 +79,24 @@ h1.BlockHead__title--col-wh {
 	}
 }
 
+@media screen and (max-width: 480px){
+	.BlockHead__middle {
+		width: 290px;
+	}
+	.BlockHead__circle {
+		width: 91px;
+		font-size: 14px;
+		padding: 8px 0;
+	}
+	h1.BlockHead__title--col-wh {
+		margin: 57px 60px 32px 60px;
+ 	   font-size: 50px;
+		font-weight: bold;
+	}
+	.BlockHead__circle span {
+		font-size: 19px;
+	}
+}
 
 
 
@@ -160,4 +174,9 @@ h1.BlockHead__title--col-wh {
     font-size: 2.325rem;
     text-align: center;
     color: #7ED957;
+}
+@media screen and (max-width: 480px){
+	.cps-post-main h2{
+		font-size: 1.6rem;		
+	}
 }
